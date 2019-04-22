@@ -1,14 +1,22 @@
-function out() {
-	let block = document.getElementById('out');
-	//	block.innerHTML += " - <div>текст должен добавиться!</div>"
-	// .innerHTML - вставляет всё
+function plus() {
+	let num1, num2, result;
 
-	//	block.insertAdjacentHTML('afterEnd', ' вставляемый текст ');
-	//beforeBegin - перед открывающимся тегом
-	//afterBegin - после открывающего тега
-	//beforeEnd - перед закрывающимся тегом
-	//afterEnd - после закрывающего тега
+	num1 = document.getElementById('n1').value;
+	num1 = parseInt(num1);
 
-	block.outerHTML += '<div class="one"> вставляемый текст </div>';
+	num2 = document.getElementById('n2').value;
+	num2 = parseInt(num2);
+
+	if (num1 > num2) {
+		document.getElementById('out').innerHTML += ' первое число больше вторго';
+		setTimeout("location.reload(true)", 2000);
+	} else if (num1 == num2) {
+		document.getElementById('out').innerHTML += ' числа одинаковые';
+		setTimeout("location.reload(true)", 2000);
+	} else {
+		document.getElementById('out').innerHTML += ' второе число больше первого';
+		setTimeout("location.reload(true)", 2000);
+	}
+
 
 }
