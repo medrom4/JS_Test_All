@@ -1,13 +1,8 @@
-* {
-	margin: 0;
-	box-sizing: border-box;
-	color: #34404b;
-	font-family: 'Open Sans Condensed', sans-serif;
-}
-
-html,
 body {
 	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #34404b;
 	justify-content: center;
 	align-content: center;
 	width: 100%;
