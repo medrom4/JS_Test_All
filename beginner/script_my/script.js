@@ -1,13 +1,18 @@
-document.getElementById('slider-left').onclick = sliderLeft;
 var left = 0;
+var timer;
 
-function sliderLeft() {
-	let polosa = document.getElementById('polosa');
-	left = left - 256;
+function autoSlider() {
+	timer = setTimeout(function () {
+		let polosa = document.getElementById('polosa');
+		left = left - 256;
 
-	if (left < -768) {
-		left = 0;
-	}
+		if (left < -768) {
+			left = 0;
+			clearTimeout(timer);
+		}
 
-	polosa.style.left = left + 'px';
+		polosa.style.left = left + 'px';
+		autoSlider();
+	}, 1300);
 }
+autoSlider();
