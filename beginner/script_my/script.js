@@ -1,18 +1,20 @@
-var left = 0;
-var timer;
+var p = document.getElementsByTagName('p');
+var one = document.getElementsByClassName('one');
+console.log(p);
 
-function autoSlider() {
-	timer = setTimeout(function () {
-		let polosa = document.getElementById('polosa');
-		left = left - 256;
-
-		if (left < -768) {
-			left = 0;
-			clearTimeout(timer);
-		}
-
-		polosa.style.left = left + 'px';
-		autoSlider();
-	}, 1300);
+for (var i = 0; i < p.length; i++) {
+	p[i].onclick = f1;
 }
-autoSlider();
+
+function f1() {
+	console.log(this);
+	this.style.border = '1px solid #000';
+}
+
+for (var i = 0; i < one.length; i++) {
+	one[i].onclick = f2;
+}
+
+function f2() {
+	this.style.fontWeight = 'bold';
+}
