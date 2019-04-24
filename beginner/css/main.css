@@ -7,3 +7,29 @@ body {
 	align-content: center;
 	width: 100%;
 }
+
+#slider {
+	margin: 50px auto;
+	width: 768px;
+	height: 256px;
+	border: 1px solid black;
+	overflow: hidden;
+}
+
+#polosa {
+/*	background-color: aqua;*/
+	width: 1536px;
+	position: relative;
+	left: 0;
+	transition: 0.5s;
+}
+
+#polosa img {
+	float: left;
+}
+
+#polosa::after {
+	content: '';
+	display: block;
+	clear: both;
+}
