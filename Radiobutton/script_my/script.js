@@ -1,21 +1,11 @@
-var radio = document.getElementsByName('prim');
+document.getElementById('r1').oninput = cssGenerator;
 
-for (var i = 0; i < radio.length; i++) {
-    radio[i].onchange = testRadio;
-}
+function cssGenerator() {
+    let div = document.getElementById('test');
+    div.style.borderRadius = this.value + 'px';
 
-function testRadio() {
-    console.log(this.value);
-}
 
-document.getElementById('one').onclick = checkRadio;
-
-function checkRadio() {
-    var arr = document.getElementsByName('prim');
-    for (var i = 0; i < arr.length; i++) {
-        if (arr[i].checked) {
-            console.log(arr[i].value);
-            break;
-        }
-    }
+    let out = document.getElementById('out');
+    out.innerHTML = '-webkit-border-radius: ' + this.value + 'px;\n';
+    out.innerHTML += 'border-radius: ' + this.value + 'px';
 }
