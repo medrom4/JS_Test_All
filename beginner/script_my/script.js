@@ -1,25 +1,29 @@
-var man = {
-	"name": "Alex",
-	"age": 67,
-	"id": "2000123",
-	"sex": "male",
-	"year": function () {
-		return 2019 - this.age;
+var goods = {
+
+	"28292": {
+		"name": "Банан",
+		"cost": 30,
+		"img": "https://cdn4.iconfinder.com/data/icons/materia-flat-fruits/24/027_045_banana_banan_plant_herb_fruit_food-256.png",
+		"sclad": "да"
+	},
+
+	"28293": {
+		"name": "Помидор",
+		"cost": 12,
+		"img": "https://cdn1.iconfinder.com/data/icons/Hooligans_Icons/250/Tomato.png",
+		"sclad": "нет"
 	}
+
 };
 
-console.log(man.year());
+console.log(goods);
 
-
-///////////////////////////////
-var m = {
-	"mas": [5, 6, 34, 12, 45],
-	"sum": function () {
-		var sum = 0;
-		for (var i = 0; i < this.mas.length; i++) {
-			sum += this.mas[i];
-		}
-		return sum;
-	}
+var out = '';
+for (var key in goods) {
+	out += 'Название: ' + goods[key].name + '<br>' +
+		'Цена: ' + goods[key].cost + '<br>' +
+		'Картинка: ' + '<img src="' + goods[key].img + '">' + '<br>' +
+		'Наличие на складе: ' + goods[key].sclad + '<br>' + '<hr>';
 }
-console.log(m.sum());
+
+document.getElementById('out').innerHTML = out;
