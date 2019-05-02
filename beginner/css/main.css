@@ -5,10 +5,3 @@ body {
     color: #34404b;
 }
 
-#test {
-    display: block;
-    width: 250px;
-    border: 2px solid black;
-    border-radius: 6px;
-    margin: 100px auto;
-}
