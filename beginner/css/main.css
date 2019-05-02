@@ -4,3 +4,20 @@ body {
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: #34404b;
 }
+
+#test {
+	width: 600px;
+	height: 100px;
+	background: yellow;
+	margin: 50px;
+	position: relative;
+}
+
+#test2 {
+	width: 10px;
+	height: 100px;
+	background: blue;
+	position: absolute;
+	left: 290px;
+	top: 0;
+}
