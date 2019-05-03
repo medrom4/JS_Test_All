@@ -5,15 +5,3 @@ body {
     color: #34404b;
 }
 
-#test {
-    width: 150px;
-    height: 150px;
-    background: orange;
-    margin: 30px;
-}
-
-#out {
-    width: 300px;
-    height: 150px;
-    margin: 30px;
-}
