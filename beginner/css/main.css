@@ -5,25 +5,3 @@ body {
     color: #34404b;
 }
 
-#divOne {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-}
-
-#red,
-#green {
-    margin: 5px;
-    padding: 10px;
-    width: 70px;
-    border: none;
-    box-shadow: 0 0 10px rgba(0,0,0,0.7);
-}
-
-#green {
-    background: green;
-}
-
-#red {
-    background: red;
-}
