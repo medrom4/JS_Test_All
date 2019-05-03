@@ -5,3 +5,12 @@ body {
     color: #34404b;
 }
 
+#all {
+    text-align: center;
+    margin: 100px auto;
+}
+
+#oned,
+#out{
+    margin: 20px;
+}
