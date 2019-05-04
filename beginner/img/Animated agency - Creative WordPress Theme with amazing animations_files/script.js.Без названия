@@ -1,0 +1,9 @@
+(function($){
+    $(document).on('ready', function(){
+        $('#demos-list-button, .panel-demos-close').on('click', function(e){
+            e.preventDefault();
+            $('.ideothemo-float-panel-demos').toggleClass('active');
+        });        
+    });
+    
+})(jQuery);
