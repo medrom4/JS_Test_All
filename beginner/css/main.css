@@ -5,18 +5,3 @@
     color: #34404b;
     box-sizing: border-box;
 }
-
-.left,
-.right {
-    float: left;
-    width: 20%;
-    padding: 20px;
-}
-
-.left {
-    background: coral;
-}
-
-.right {
-    background: orange;
-}
