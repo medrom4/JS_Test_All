@@ -6,12 +6,3 @@
     box-sizing: border-box;
 }
 
-#menu {
-    width: 250px;
-    height: 100vh;
-    background: #000;
-    position: fixed;
-    left: -235px;
-    top: 0;
-    transition: all ease .3s;
-}
