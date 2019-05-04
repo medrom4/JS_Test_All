@@ -6,39 +6,3 @@
     box-sizing: border-box;
 }
 
-.tabs {
-    width: 600px;
-    height: 160px;
-    margin: 50px auto;
-}
-
-.tab-h {
-    display: inline-block;
-    padding: 1px 20px;
-    line-height: 30px;
-    text-align: center;
-    border: 1px solid black;
-    cursor: pointer;
-}
-
-.tab-b {
-    display: none;
-    padding: 10px 20px;
-    transition: all ease 0.3s;
-    border: 1px solid black;
-}
-
-.tabs-body {
-    position: relative;
-    top: -1px;
-    z-index: 1;
-}
-
-.tabs-header {
-    position: relative;
-    z-index: 2;
-}
-
-.active {
-    border-bottom: 1px solid #fff;
-}
