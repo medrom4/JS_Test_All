@@ -1,7 +1,48 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: #34404b;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #34404b;
+	box-sizing: border-box;
+}
+
+.jlehmann {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.jlehmann h1 {
+	margin: auto;
+	text-align: center;
+	line-height: 100vh;
+}
+
+.layer {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.layer-red {
+	background-color: red;
+}
+
+.layer-blue {
+	background-color: blue;
+}
+
+.layer-yellow {
+	background-color: yellow;
+}
+
+.layer-pink {
+	background-color: pink;
+}
+
+.layer-green {
+	background-color: green;
 }
