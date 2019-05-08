@@ -1,27 +1,31 @@
-let go = [1,2,3,4,5];
-// добавление в конец массива
-go.push(2);
-console.log(go);
+let arr = document.getElementsByClassName('pclaass');
+for (let i = 0; i < arr.length; i++) arr[i].style.color = 'red';
 
-// удаление последнего из массива
-go.pop(2);
-console.log(go);
+let arr2 = document.getElementsByClassName('clic');
+for (let k = 0; k < arr2.length; k++) arr2[k].onclick = () => {
+	alert('нажми ОК сука');
+}
 
+let arr3 = [1, 2, 3, 4, 5, -6, 7, 8, 9, 10, -14, -9];
+let temperatyra = 0;
+for (let j = 0; j < arr3.length; j++) temperatyra += arr3[j];
+console.log(temperatyra / arr3.length);
 
-go.shift(); // удаление первого из массива
-go.unshift('Hello'); // добавление первого из массива
-console.log(go);
+console.log(Math.min.apply(null, arr3));
+console.log(Math.max.apply(null, arr3));
 
-let all = 'hi, my name, Alexa!';
-let cons = all.split(','); // разбивает строку на массив по запятой
-console.log(cons);
-let consTwo = cons.join('-'); // объединяет массив в строку с разделителем в скобках
-console.log(consTwo);
+console.log('------------------------');
 
-let allTwoo = [2, 'heloo', 56, 3.14, 'gooo'];
-let goThree = allTwoo.slice(1,4); // выборка массива
-console.log(goThree);
+let arr4 = [
+	[1, 3, 5],
+	[3, -7, 11],
+	[2, -5, 6]
+];
 
-let allTThree = [2, 'heloo', 56, 3.14, 'gooo'];
-let [b,c] = allTThree;
-console.log(b,c);
+for (let z = 0; z < arr4.length; z++) {
+	let temerTwo = 0;
+	for (let go = 0; go < arr4[z].length; go++) {
+		temerTwo += arr4[z][go];		
+	}
+	console.log(temerTwo / arr4[z].length);
+}
