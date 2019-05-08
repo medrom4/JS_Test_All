@@ -1,14 +1,8 @@
-let a = 8;
-console.log(typeof a);
+let abbx = prompt('Сколько вам лет? ');
 
-let b = "Hello";
-console.log(typeof b);
+if (abbx > 0 & abbx < 18) alert("Малышик");
+else if (abbx >= 18 & abbx < 60) alert("Совершеннолетний");
+else if (abbx >= 60 & abbx < 110) alert("Совершеннолетний");
+else alert("Что то нормальное ввиди лох");
 
-let c = 8.2;
-console.log(typeof c);
-
-let d = true;
-console.log(typeof d);
-
-let e = [1,2,3,4,5];
-console.log(typeof e);
+console.log(parseFloat(abbx));
