@@ -1,8 +1,16 @@
-let abbx = prompt('Сколько вам лет? ');
+let out = document.getElementById('out');
+let tmp = '';
 
-if (abbx > 0 & abbx < 18) alert("Малышик");
-else if (abbx >= 18 & abbx < 60) alert("Совершеннолетний");
-else if (abbx >= 60 & abbx < 110) alert("Совершеннолетний");
-else alert("Что то нормальное ввиди лох");
+// c заданным количеством повторений
+let arr = [];
 
-console.log(parseFloat(abbx));
+for (let i = 1; i <= 9; i++) {
+	out.innerHTML += i*7 + '; ';
+	console.log(i);	 
+}
+
+//let i = 4;
+//while (i < 400) {
+//	i++;
+//	console.log(i);
+//}
