@@ -1,14 +1,25 @@
-function getSumm() {
-	console.log(3 * 7);
+let myFunc = (z, q) => z * 2 * q;
+console.log(myFunc(2, 19));
+//---------------------------
+console.log('---------------------------');
+//---------------------------
+
+let a = (d, c) => {
+	//
+	//
+	return c;
 }
-getSumm();
 
-
-let w = function () {
-	console.log(3 * 6);
+let b = () => {
+	//
+	//
+	return true;
 }
-w();
 
-(function getSumm() {
-	console.log(3 * 5);
-})();
+let l = c => {
+	//
+	//
+	return c;
+}
+
+let m = (d, c) => d * c;
