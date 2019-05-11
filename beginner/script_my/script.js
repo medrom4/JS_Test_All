@@ -1,15 +1,7 @@
-function cs2() {
-    let c = -5;
-    return function(){
-        c++;
-        console.log(c);
-    }
-}
+const foo = Object.freeze({
+    'd': 33
+});
+console.log(foo.d);
 
-let d = cs2();
-d();
-d();
-d();
-d();
-d();
-d();
+foo.d = 44;
+console.log(foo.d);
