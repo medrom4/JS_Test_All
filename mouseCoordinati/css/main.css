@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #34404b;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#test {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 20px auto;
+}
