@@ -1,7 +1,23 @@
 * {
   margin: 0;
   padding: 0;
-	box-sizing: border-box;
-	color: #34404b;
+  box-sizing: border-box;
+  color: #34404b;
   font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#reclama,
+#blockOne {
+  border: 1px solid #eee;
+  margin: 10px;
+  text-align: center;
+  background-color: #000;
+}
+
+#blockTwoo {
+  background-color: #fff;
+}
+
+.blockOff {
+  display: none;
 }
