@@ -1,7 +1,17 @@
+<<<<<<< HEAD
 * {
     padding: 10px;
     margin: 0px;
     font-family: 'Open Sans Condensed', sans-serif;
     color: #34404b;
     box-sizing: border-box;
+=======
+html,
+body {
+  padding: 0;
+  margin: 100;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #34404b;
+  box-sizing: border-box;
+>>>>>>> 70b519c86afa6fd3dd31baf8c087988e5405a3f2
 }
