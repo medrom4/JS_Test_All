@@ -1,13 +1,7 @@
 * {
-    padding: 0;
-    margin: 0;
+    padding: 10px;
+    margin: 0px;
     font-family: 'Open Sans Condensed', sans-serif;
     color: #34404b;
     box-sizing: border-box;
-}
-
-div {
-    border: 1px solid #ddd;
-    margin: 30px;
-    padding: 30px;
 }
