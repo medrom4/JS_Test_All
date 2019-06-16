@@ -1,15 +1,18 @@
-let mass = [3, -12];
-let result = [];
+const days = 9;
+const period = 3;
+const workDayAmount = 200;
+const weekendAmount = 100;
 
-if (mass[0] < mass[1]) {
-	for (i = mass[0]; i <= mass[1]; i++) {
-		result.push(i);
+let total = 0;
+let count = 1;
+
+for (let i = 1; i <= days; i++) {
+	if (count == period) {
+		if (i % 6 == 0 || i % 7 == 0) total += weekendAmount;
+		else total += workDayAmount;
+		count = 0;
 	}
-} else {
-	for (i = mass[0]; i >= mass[1]; i--) {
-		result.push(i);
-	}
+	count++;
 }
 
-
-console.log(result);
+console.log(total);
