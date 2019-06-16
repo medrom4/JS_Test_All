@@ -1,34 +1,15 @@
-let size = ['15px', '12pt', '34em', '-3px', '2%'];
+let mass = [3, -12];
+let result = [];
 
-function toNum(arr) {
-	let out = [];
-
-	for (i = 0; i < arr.length; i++) {
-		arr[i] = parseFloat(arr[i]);
-		if (arr[i] > 0) out.push(arr[i])
+if (mass[0] < mass[1]) {
+	for (i = mass[0]; i <= mass[1]; i++) {
+		result.push(i);
 	}
-	out.sort(function (a, b) {
-		return a - b;
-	});
-
-	return out;
+} else {
+	for (i = mass[0]; i >= mass[1]; i--) {
+		result.push(i);
+	}
 }
 
 
-function toNum2(arr) {
-	let newArr = arr.map(function (sz) {
-		return parseFloat(sz);
-	});
-
-	newArr = newArr.filter(function (sz) {
-		if (sz > 0) return sz;
-	});
-
-	newArr.sort(function (a, b) {
-		return a - b;
-	});
-
-	return newArr;
-}
-
-console.log(toNum2(size));
+console.log(result);
